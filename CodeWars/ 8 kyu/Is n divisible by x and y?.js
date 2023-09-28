@@ -9,3 +9,9 @@ function isDivisible(n, x, y) {
     }
   }
   console.log(isDivisible(10, 5, 2));
+
+  // second variant for min langth:
+  function isDivisible(a, b, c) {
+    return a%b===0 && a%c===0;
+  }
+  console.log(isDivisible(12, 5, 2));
