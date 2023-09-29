@@ -4,7 +4,16 @@
 
 // Solution:
 
-function billboard(name, price = 30){
-    return name.length * price
-    } 
-    console.log( billboard("Serhiii",10))
+function billboard(name, price = 30) {
+    let total = 0;
+    for (let i = 0; i < name.length; i++) {
+      if (name[i] === " ") {
+        total += price;
+      } else {
+        total += price;
+      }
+    }
+    return total;
+  }
+  
+  console.log(billboard("serhiiii", 30));
